@@ -1,0 +1,5 @@
+@use '../globals' as mixins;
+
+.custom-button {
+    @include mixins.btn();
+}

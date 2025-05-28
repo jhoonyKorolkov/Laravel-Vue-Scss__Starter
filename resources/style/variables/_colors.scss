@@ -1,0 +1,49 @@
+:root {
+    /* Backgrounds */
+    --bg: #FAFAFA;
+    --bg-surface: #E7E7E3;
+    --bg-primary: #4A69E2;
+    --bg-accent: #FFA52F;
+    --bg-white: #FFFFFF;
+    --bg-surface-dark: #232321;
+    --bg-warning: #D00000;
+
+    /* Text */
+    --text-primary: #232321;
+    --text-secondary: #70706E;
+    --text-inverse: #FFFFFF;
+    --text-link: #4A69E2;
+    --text-accent: #FFA52F;
+    --text-warning: #D00000;
+
+    /* Borders */
+    --border-primary: #232321;
+    --border-light: #E7E7E3;
+    --border-muted: #FAFAFA;
+    --border-warning: #D00000;
+}
+
+.dark {
+    /* Backgrounds */
+    --bg: #232321;
+    --bg-surface: #70706E;
+    --bg-primary: #4A69E2;
+    --bg-accent: #FFA52F;
+    --bg-white: #FFFFFF;
+    --bg-warning: #D00000;
+
+
+    /* Text */
+    --text-primary: #FAFAFA;
+    --text-secondary: #E7E7E3;
+    --text-inverse: #232321;
+    --text-link: #4A69E2;
+    --text-accent: #FFA52F;
+    --text-warning: #D00000;
+
+
+    /* Borders */
+    --border-light: #70706E;
+    --border-muted: #232321;
+    --border-warning: #D00000;
+}

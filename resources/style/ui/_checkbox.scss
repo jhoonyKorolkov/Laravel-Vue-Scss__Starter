@@ -1,0 +1,35 @@
+@use '../globals' as mixins;
+
+.custom-checkbox {
+    appearance: none;
+    border-radius: 0.25rem; // .rounded
+    border: 1px solid #d1d5db; // .border-gray-300
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); // .shadow-sm
+
+    &:checked {
+        background-color: var(--bg-surface-dark); // .text-indigo-600
+        border-color: var(--bg-surface-dark);
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 6px;
+            width: 6px;
+            height: 11px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(74, 105, 226, 0.5);
+    }
+}

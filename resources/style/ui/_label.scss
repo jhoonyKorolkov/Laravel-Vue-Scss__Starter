@@ -1,0 +1,7 @@
+@use '../globals' as mixins;
+
+.custom-label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 16px;
+}

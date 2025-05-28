@@ -1,0 +1,38 @@
+@use '../../globals' as mixins;
+
+.auth-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 560px;
+    margin: 0 auto;
+    &__logo {
+        margin-bottom: 40px;
+        display: block;
+    }
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__forgot {
+        display: block;
+        margin-bottom: 20px;
+        color: var(--text-primary);
+        text-decoration: underline;
+        text-underline-offset: 6px;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.auth-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    &__agree {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
