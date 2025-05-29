@@ -1,19 +1,38 @@
 <script setup>
-import { Link } from '@inertiajs/vue3';
+import { Link } from '@inertiajs/vue3'
 
 defineProps({
     href: {
         type: String,
         required: true,
     },
-});
+})
 </script>
 
 <template>
-    <Link
-        :href="href"
-        class="block w-full px-4 py-2 text-start text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
-    >
+    <Link :href="href" class="dropdown-link">
         <slot />
     </Link>
 </template>
+
+<style scoped lang="scss">
+.dropdown-link {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    font-size: 0.875rem; // text-sm
+    line-height: 1.25rem; // leading-5
+    color: #374151; // text-gray-700
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+
+    &:hover,
+    &:focus {
+        background-color: #f3f4f6; // bg-gray-100
+        outline: none;
+    }
+}
+</style>

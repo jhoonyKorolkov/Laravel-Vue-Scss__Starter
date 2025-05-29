@@ -1,20 +1,14 @@
 <script setup>
-import ApplicationLogo from '@/Components/ApplicationLogo.vue'
-import { Link } from '@inertiajs/vue3'
+import Header from '@/Pages/Admin/Main/Header.vue'
+import Sidebar from '@/Pages/Admin/Main/Sidebar.vue'
 </script>
 
 <template>
     <main class="admin-layout">
-        <header class="admin-layout__header"></header>
-        <aside class="admin-layout__sidebar">
-            <Link href="/">
-                <ApplicationLogo />
-            </Link>
-        </aside>
+        <Header />
+        <Sidebar />
         <section class="admin-layout__content">
             <slot />
         </section>
     </main>
 </template>
-
-<style scoped></style>

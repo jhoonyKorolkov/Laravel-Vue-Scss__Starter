@@ -18,7 +18,7 @@
 
     /* Borders */
     --border-primary: #232321;
-    --border-light: #E7E7E3;
+    --border-light: rgba(35, 35, 33, 0.2);
     --border-muted: #FAFAFA;
     --border-warning: #D00000;
 }
@@ -43,6 +43,7 @@
 
 
     /* Borders */
+    --border-primary: #70706E;
     --border-light: #70706E;
     --border-muted: #232321;
     --border-warning: #D00000;
